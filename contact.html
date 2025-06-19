@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Contact Elysian Filming for professional photography services. Get in touch for bookings and inquiries.">
+    <meta name="keywords" content="photography contact, book photographer, photography inquiry">
+    <meta name="author" content="Elysian Filming">
+    <meta property="og:title" content="Contact Elysian Filming - Professional Photography">
+    <meta property="og:description" content="Get in touch with Elysian Filming for your photography needs.">
+    <meta property="og:type" content="website">
+    <title>Contact Us - Elysian Filming</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/contact.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="./js/contact.js"></script>
+</head>
+
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    <header>
+        <div class="container">
+            <nav class="navbar" aria-label="Main navigation">
+                <a href="index.html" class="logo">Elysian <span>Filming</span></a>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html" class="current">Contact</a></li>
+                </ul>
+                <button class="hamburger" aria-label="Menu" aria-expanded="false">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <section class="contact-hero" aria-labelledby="contact-heading">
+            <div class="hero-content">
+                <h1 id="contact-heading">Get In Touch</h1>
+                <p>We'd love to hear about your photography needs. Fill out the form below and we'll get back to you
+                    soon.</p>
+            </div>
+        </section>
+
+        <section class="contact-section" aria-labelledby="contact-form-heading">
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="contact-form">
+                        <h2 id="contact-form-heading" class="section-title">Send Us a Message</h2>
+                        <form id="contactForm" class="form">
+                            <div class="form-group">
+                                <label for="name">Full Name</label>
+                                <input type="text" id="name" name="name" required placeholder="Your name">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" name="email" required placeholder="Your email">
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone" placeholder="Your phone number">
+                            </div>
+                            <div class="form-group">
+                                <label for="service">Service Interested In</label>
+                                <select id="service" name="service">
+                                    <option value="">Select a service</option>
+                                    <option value="wedding">Wedding Photography</option>
+                                    <option value="portrait">Portrait Photography</option>
+                                    <option value="commercial">Commercial Photography</option>
+                                    <option value="event">Event Photography</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="date">Preferred Date (if applicable)</label>
+                                <input type="date" id="date" name="date">
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Your Message</label>
+                                <textarea id="message" name="message" rows="5" required
+                                    placeholder="Tell us about your project"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Send Message</button>
+                        </form>
+                        <div id="formMessage" class="form-message"></div>
+                    </div>
+                    <div class="contact-info">
+                        <h2 class="section-title">Contact Information</h2>
+                        <div class="info-card">
+                            <div class="info-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div>
+                                    <h3>Our Studio</h3>
+                                    <p>Toronto , Canada</p>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-phone"></i>
+                                <div>
+                                    <h3>Call Us</h3>
+                                    <p><a href="tel:+14379672532">+1 437 967 2532</a></p>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-envelope"></i>
+                                <div>
+                                    <h3>Email Us</h3>
+                                    <p><a href="mailto:Elysianfilming@gmail.com">Elysianfilming@gmail.com</a></p>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-clock"></i>
+                                <div>
+                                    <h3>Working Hours</h3>
+                                    <p>Monday - Friday: 9am - 6pm</p>
+                                    <p>Saturday: 10am - 4pm</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="social-links">
+                            <h3>Follow Us</h3>
+                            <div class="social-icons">
+                                <a href="https://facebook.com" aria-label="Facebook"><i
+                                        class="fab fa-facebook-f"></i></a>
+                                <a href="https://www.instagram.com/elysianfilming/?igsh=cHp2YWRmdnNleTBh#" aria-label="Instagram"><i
+                                        class="fab fa-instagram"></i></a>
+                                <a href="https://twitter.com" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- <section class="map-section">
+            <div class="container">
+                <h2 class="section-title">Find Our Studio</h2>
+                <div class="map-container">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.680380059593!2d-0.127758723464721!3d51.50073277181331!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487604c38c8cd1d9%3A0xb78f2474b9a45aa9!2sBig%20Ben!5e0!3m2!1sen!2suk!4v1717423686213!5m2!1sen!2suk"
+                        width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade" title="Map to Elysian Filming Studio"></iframe>
+                </div>
+            </div>
+        </section> -->
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>About Us</h3>
+                    <p>Elysian Filming captures life's most precious moments with artistry and passion. We specialize in
+                        wedding, portrait, and commercial photography.</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact Info</h3>
+                    <address>
+                        <p><i class="fas fa-map-marker-alt"></i> Toronto , Canada</p>
+                        <p><i class="fas fa-phone"></i> <a href="tel:++14379672532">+1 437 967 2532</a></p>
+                        <p><i class="fas fa-envelope"></i> <a
+                                href="mailto:Elysianfilming@gmail.com">Elysianfilming@gmail.com</a></p>
+                    </address>
+                </div>
+                <div class="footer-column">
+                    <h3>Follow Us</h3>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/share/1CqvmRjtog/?mibextid=wwXIfr" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/elysianfilming/?igsh=cHp2YWRmdnNleTBh#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://twitter.com" aria-label="Twitter"><i class="fab fa-twitter"></i></a>                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="year"></span> Elysian Filming. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- EmailJS Script -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script>
+        // Initialize EmailJS with your public key
+        (function () {
+            emailjs.init('YOUR_PUBLIC_KEY'); // Replace with your EmailJS public key
+        })();
+
+        // Mobile menu toggle
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+
+        hamburger.addEventListener('click', () => {
+            const isExpanded = hamburger.getAttribute('aria-expanded') === 'true';
+            hamburger.setAttribute('aria-expanded', !isExpanded);
+            navLinks.classList.toggle('active');
+        });
+
+        // Set current year in footer
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        // Contact form submission
+        document.getElementById('contactForm').addEventListener('submit', function (event) {
+            event.preventDefault();
+
+            const form = event.target;
+            const formMessage = document.getElementById('formMessage');
+
+            // Show loading state
+            formMessage.textContent = 'Sending your message...';
+            formMessage.className = 'form-message sending';
+
+            // Send form data using EmailJS
+            emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form)
+                .then(function () {
+                    // Success message
+                    formMessage.textContent = 'Thank you! Your message has been sent successfully. We will get back to you soon.';
+                    formMessage.className = 'form-message success';
+                    form.reset();
+                }, function (error) {
+                    // Error message
+                    formMessage.textContent = 'Oops! Something went wrong. Please try again later or contact us directly.';
+                    formMessage.className = 'form-message error';
+                    console.error('EmailJS Error:', error);
+                });
+        });
+    </script>
+</body>
+
+</html>
